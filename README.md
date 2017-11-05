@@ -28,7 +28,7 @@ Testando a conexão com o BD
 
 #### Conectando ao banco de dados
 ![Testando a conexão](images/javadb-testado-conexao.PNG)
-#### Testando a conexão executando uma consulta no banco de dados (TABELA **CITY**)
+#### Testando a conexão executando uma consulta no banco de dados (COLUNA **CITY** DA TABELA **CUSTOMER**)
 ![Testando a conexão](images/javadb-testado-conexao-2.PNG)
 
 
@@ -74,7 +74,7 @@ Compile novamente o projeto e execute para testar.
 #### 2º Erro ao tentar executar - autenticação - usuário e senha
 ![2º erro execução](images/projeto-executando-2-problema-usuario.PNG)
 
-#### Ajuste o código da aplicação Java
+#### Ajuste o código Java com usuário e senha
 
 Crie um projeto do tipo **Aplicação Java** chamado **acessoDb** e detro do método ```main``` da classe principal  digite o código a seguir:
 
@@ -88,6 +88,61 @@ Compile o projeto e executar para testar.
 #### 3º tentativa de executar - contectado!
 ![3º tentativa de executar](images/projeto-executando-3-ok.PNG)
 
+#### Ajuste o código Java para selecionar dados da tabela
+
+Agora vamos ajustar o método main e selecionar os dados de uma tabela:
+
+```java
+    public static void main(String[] args) throws SQLException {
+        Connection conexao = DriverManager.getConnection(
+                "jdbc:derby://localhost:1527/sample", "app", "app");
+        System.out.println("Conectado!");
+
+        PreparedStatement stmt = conexao.prepareStatement("select city from customer");
+
+        // executa um select
+        ResultSet rs = stmt.executeQuery();
+
+        // itera no ResultSet
+        while (rs.next()) {
+            String cidade = rs.getString("city");
+            System.out.println(cidade);
+        }
+
+        rs.close();
+        stmt.close();
+
+        conexao.close();
+    }
+```
+
+Compile o projeto e executar para testar.
+
+As seguintes cidades serão apresentadas:
+
+```
+Fort Lauderdale
+Miami
+Houston
+Alanta
+San Mateo
+San Jose
+Santa Clara
+Redwood City
+Dearborn
+Dearborn
+Detroit
+New York
+New York
+```
+
+Brinque com o select e teste as funções que você está utilizando nesta aplicação.
+
+Bons estudos.
+
+## Links
+
+Os seguintes links abaixo serão úteis para você estudar sobre o tema de acesso ao BD
 
  - [Bancos de dados e JDBC](https://www.caelum.com.br/apostila-java-web/bancos-de-dados-e-jdbc/)
  - [Core J2EE Patterns - Data Access Object](http://www.oracle.com/technetwork/java/dataaccessobject-138824.html)
