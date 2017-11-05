@@ -43,6 +43,16 @@ O formato da string de conexão será normalmente ```jdbc:<sgbd>://<ip>/<nome_do
 #### Copie a string de conexão para o banco de dados
 ![Onde pegar a URL de conexão com o BD](images/javadb-url-to-db-2.PNG)
 
+Esta será a url de conexão ```jdbc:derby://localhost:1527/sample```, provavelmente sa sua deverá ser a mesma. Ela deverá ser utilizada dentro da aplicação em Java.
+
+Crie um projeto do tipo **Aplicação Java** chamado acessoDb e detro do método main da classe principal  digite o código a seguir:
+
+```java
+	Connection conexao = DriverManager.getConnection(
+			"jdbc:derby://localhost:1527/sample");
+	System.out.println("Conectado!");
+	conexao.close();
+```
 
 
  - [Bancos de dados e JDBC](https://www.caelum.com.br/apostila-java-web/bancos-de-dados-e-jdbc/)
