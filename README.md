@@ -15,13 +15,13 @@ Caso seu javaDB não esteja funcionando reconfigure-o conforme abaixo:
 
 ### Executando o BD - JavaDB
 
-xxxx
+Executando o servidor e testando a conexão
 
 #### Iniciando o servidor JavaDB
 ![Iniciando o servidor JavaDB](images/javadb-iniciar-servidor.PNG)
-#### Executando o servidor
+#### Verificando que o servidor foi executado corretamente
 ![Executando o servidor](images/javadb-servidor-executando.PNG)
-#### Testando a conexão
+#### Testando a conexão com o banco de dados de exemplo do JavaDB
 ![Testando a conexão](images/javadb-testado-conexao.PNG)
 
 
