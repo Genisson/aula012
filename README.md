@@ -28,7 +28,7 @@ Testando a conexão com o BD
 
 #### Conectando ao banco de dados
 ![Testando a conexão](images/javadb-testado-conexao.PNG)
-#### Testando a conexão executando uma consulta no banco de dados (TABELA ***CITY***)
+#### Testando a conexão executando uma consulta no banco de dados (TABELA **CITY**)
 ![Testando a conexão](images/javadb-testado-conexao-2.PNG)
 
 
