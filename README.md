@@ -3,8 +3,14 @@
 ## Criando um projeto de acesso ao BD
 
 ### Configurando BD - JavaDB
+
+Caso seu javaDB não esteja funcionando reconfigure-o conforme abaixo:
+
+#### Acessando propriedades
 ![JavaDB - acessando propriedades](images/conf-javadb-1.PNG)
+#### Retirando o apontamento do diretório JDK
 ![JavaDB - retirando o apontamento do diretório JDK](images/conf-javadb-2.PNG)
+#### Reapontando para o diretório do glassfish
 ![JavaDB - reapontando para o diretório do glassfish](images/conf-javadb-3.PNG)
 
 
