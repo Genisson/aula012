@@ -48,10 +48,10 @@ Esta será a url de conexão ```jdbc:derby://localhost:1527/sample```, provavelm
 Crie um projeto do tipo **Aplicação Java** chamado acessoDb e detro do método main da classe principal  digite o código a seguir:
 
 ```java
-	Connection conexao = DriverManager.getConnection(
-			"jdbc:derby://localhost:1527/sample");
-	System.out.println("Conectado!");
-	conexao.close();
+Connection conexao = DriverManager.getConnection(
+		"jdbc:derby://localhost:1527/sample");
+System.out.println("Conectado!");
+conexao.close();
 ```
 
 
