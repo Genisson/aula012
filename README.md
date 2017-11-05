@@ -7,11 +7,22 @@
 Caso seu javaDB não esteja funcionando reconfigure-o conforme abaixo:
 
 #### Acessando propriedades
-![JavaDB - acessando propriedades](images/conf-javadb-1.PNG)
+![Acessando propriedades](images/conf-javadb-1.PNG)
 #### Retirando o apontamento do diretório JDK
-![JavaDB - retirando o apontamento do diretório JDK](images/conf-javadb-2.PNG)
+![Retirando o apontamento do diretório JDK](images/conf-javadb-2.PNG)
 #### Reapontando para o diretório do glassfish
-![JavaDB - reapontando para o diretório do glassfish](images/conf-javadb-3.PNG)
+![Reapontando para o diretório do glassfish](images/conf-javadb-3.PNG)
+
+### Executando o BD - JavaDB
+
+xxxx
+
+#### Iniciando o servidor JavaDB
+![Iniciando o servidor JavaDB](images/javadb-iniciar-servidor.PNG)
+#### Executando o servidor
+![Executando o servidor](images/javadb-servidor-executando.PNG)
+#### Testando a conexão
+![Testando a conexão](images/javadb-testado-conexao.PNG)
 
 
 
